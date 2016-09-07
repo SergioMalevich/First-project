@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+
+        var x = 5;
+        var y = 5;
+
+        var z = x+y;
+
+        // var obj = {
+        //     name: "Serega",
+        //     age: 28,
+        //     "action": function() {
+        //         alert("Learning js")
+        //     }
+        // }
+
+        function Human(name, a, func) {
+            this.name = name;
+            this.age = a;
+            this.superAction = func;
+            this.brain = true;
+        
+
+            sername = "Malevich";
+
+            this.goodAction = function(s) {
+
+                alert(sername + " " + s);
+            }
+            this.badAction = function (){
+                alert(this.name + " Making lasta");
+            }
+
+
+        }
+
+        var obj = new Human("Serega", 28, function() {
+            alert("Super Power");
+        });
+
+
+
+
+        //obj.brain = false; //true boolean
+
+
+
+
+        if(obj.brain) {
+
+            obj.goodAction("Learning JS");
+
+            obj.superAction();
+
+        } else {
+            obj.badAction();
+        }
+
+
+
+
+
+    </script>
+</body>
+</html>
