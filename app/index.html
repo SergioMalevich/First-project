@@ -7,6 +7,7 @@
 <body>
 Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Одна, города рот. мир lorem живет, деревни текстов пустился вскоре инициал безорфографичный.
 <h1>:jg</h1>
+<div id="out"></div>
     <script type="text/javascript">
 
 
@@ -40,25 +41,22 @@ var t = 0;
 
             this.goodAction = function(s) {
 
-                alert(sername + " " + s);
+                //alert(sername + " " + s);
             }
             this.badAction = function (){
-                alert(this.name + " Making lasta");
+                //alert(this.name + " Making lasta");
             }
 
 
         }
 
         var obj = new Human("Serega", 28, function() {
-            alert("Super Power");
+            //alert("Super Power"); 
         });
 
 
 
-
         //obj.brain = false; //true boolean
-
-
 
 
         if(obj.brain) {
@@ -70,6 +68,20 @@ var t = 0;
         } else {
             obj.badAction();
         }
+
+
+var out = document.getElementById("out");
+
+var arr = ["One", "Two", "Three", "Four", "Five"];
+
+for(var i =0; i< arr.length; i++) {
+    var value = arr[i];
+
+    var str = out.innerHTML;
+    str = str + value;
+    out.innerHTML = str;
+}
+
 
 
 
